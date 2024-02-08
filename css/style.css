@@ -469,4 +469,7 @@ h6.small {
     .stickybtn {
         right: -44px;
     }
+    h1 br {
+        display: none;
+    }
 }
