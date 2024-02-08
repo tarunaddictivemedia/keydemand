@@ -472,4 +472,15 @@ h6.small {
     h1 br {
         display: none;
     }
+    .keybandBrandcntnt .linnr .iconBox .icon {
+        width: 80px;
+        height: 80px;
+    }
+    .keybandBrandcntnt .linnr .iconBox .icon img {
+        width: 45px;
+    }
+    .keydemandPIcntnt .linnr .iconBox .icon {
+        width: 80px;
+        height: 80px;
+    }
 }
