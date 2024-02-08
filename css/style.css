@@ -387,6 +387,20 @@ h6.small {
 .keydemandPI h6.small {
     margin-bottom: 2rem;
 }
+.keydemandPIcntnt ul li:hover .icon, .keybandBrandcntnt ul li:hover .icon {
+    top: -4px;
+}
+.keydemandPIcntnt ul li .icon, .keybandBrandcntnt ul li .icon {
+    position: relative;
+    top: 0;
+    transition: 0.5s ease;
+}
+.keydemandPIcntnt ul li , .keybandBrandcntnt ul li {
+    cursor: pointer;
+}
+.mainbanner .formcontrol .inputcontrol input:focus, .mainbanner .formcontrol .inputcontrol select:focus {
+    border-color: #004a6e;
+}
 @media(max-width: 2560px) {
     html {
         font-size: 70%;
