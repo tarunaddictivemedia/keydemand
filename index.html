@@ -7,7 +7,7 @@
 	<title>Keydemand</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -80,7 +80,7 @@
 		<div class="flex spaceBetween">
 			<div class="col-2">
 				<div class="propcntnt flex alignEnd squreprop lightgreen">
-					<img src="images/property.svg" alt="Property">
+					<img src="images/build.svg" alt="Property">
 						<div class="prorinnr">
 							<h3><span class="counting" data-count="1900">0</span>+</h3>
 							<p>Properties</p>
@@ -108,7 +108,7 @@
 			</div>
 			<div class="col-35">				
 				<div class="propcntnt flex alignEnd mediumprop lightgreen">
-					<img src="images/price.svg" alt="Price">
+					<img src="images/inr.svg" alt="Price">
 					<div class="prorinnr">
 						<h3>₹<span class="counting" data-count="609">0</span> Cr</h3>
 						<p>Value of Assets Under Discussion</p>
@@ -366,7 +366,7 @@
 </div>
 
 <div class="stickybtn">
-	<a class="btn disable">Connect with us</a>
+	<a class="btn">Connect with us</a>
 </div>
 <!-- End Footer  -->
 
@@ -411,7 +411,16 @@
 	        $(".downarrow").removeClass("stickyarrow");
 	    }
 	});
-	$(".downarrow").click(function() {
+	$(window).scroll(function() {    
+	    var scroll = $(window).scrollTop();
+
+	    if (scroll >= 500) {
+	        $(".stickybtn").addClass("show");
+	    } else {
+	        $(".stickybtn").removeClass("show");
+	    }
+	});
+	$(".downarrow, .stickybtn").click(function() {
 	    $('html,body').animate({
 	        scrollTop: $("html").offset().top},
 	        'slow');
