@@ -397,6 +397,9 @@ h6.small {
 .bigprop  h3 {
     font-size: 12rem;
 }
+.prorinnr h3 {
+    font-weight: 100 !important;
+}
 .keybandBrand h4 {
     text-transform: uppercase;
 }
