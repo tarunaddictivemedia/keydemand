@@ -401,6 +401,13 @@ h6.small {
 .mainbanner .formcontrol .inputcontrol input:focus, .mainbanner .formcontrol .inputcontrol select:focus {
     border-color: #004a6e;
 }
+.smallprop 
+ h3 {
+    font-size: 4rem;
+}
+.bigprop  h3 {
+    font-size: 12rem;
+}
 @media(max-width: 2560px) {
     html {
         font-size: 70%;
