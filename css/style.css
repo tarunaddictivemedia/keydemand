@@ -271,7 +271,7 @@ p {
     margin: 1rem;
 }
 h4.semiSmall {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
     color: #6C8C91;
     text-transform: uppercase;
@@ -423,6 +423,22 @@ h6.small {
 .keydemandestate {
     padding-top: 20rem;
 }
+.keybandBrandslider .pull-arrow:before {
+    display: none;
+}
+.keybandBrandslider .pull-arrow {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+.keybandBrandslider  button.slick-prev {
+    left: -35rem;
+}
+.keybandBrandslider button.slick-next {
+    right: -35rem;
+}
 @keyframes mymove {
   0%  {bottom: 0px;}
   100% {bottom: 20px;}
@@ -435,6 +451,9 @@ h6.small {
 @media(max-width: 1600px) {
     html {
         font-size: 60%;
+    }
+    .keybandBrandslider .pull-arrow {
+        top: 5px;
     }
 }
 @media(max-width: 1440px) {
@@ -508,5 +527,9 @@ h6.small {
     .keydemandPIcntnt .linnr .iconBox .icon {
         width: 80px;
         height: 80px;
+    }
+    .keybandBrandslider .pull-arrow {
+        position: absolute;
+        top: 2px;
     }
 }
