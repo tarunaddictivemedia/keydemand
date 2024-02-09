@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0
+}
+
+*,:after,:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    font-size: 10px;
+}
+body {
+    background-color: #fff;
+    color: #747474;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto !important;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+    max-width: 170rem;
+    position: relative;
+}
+a, a img, img {
+    transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+}
+ul  {
+    list-style: none;
+    padding-left: 0
+}
+.container {
+    max-width: 133rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.alignCenter {
+    align-items: center;
+}
+.spaceBetween {
+    justify-content: space-between;
+}
+.alignEnd {
+    align-items: flex-end;
+}
+.logowrapper .logo img {
+    width: 26rem;
+}
+.heightfull {
+    height: 100%;
+}
+.primaryColor {
+    color: #004A6E;
+}
+.secondaryColor {
+  color: #000;  
+}
+.primaryBG {
+    background: #0B262A;
+}
+h1 {
+    font-size: 4.2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.25);
+}
+h1 span {
+    font-weight: normal;
+}
+.graybg {
+    background-color: #D9DCD2;
+}
+/*.keydemandestate h2 strong, .keydemandestate h6.small {    
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.25);
+}*/
+header.header-fixed {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    padding-top: 3.5rem;
+    z-index: 2;
+}
+.mainbanner .bannerinnr {
+    height: 68rem;
+    padding-top: 8rem;
+    width: 100%;
+}
+.bannerinnr .flex {
+    width: 100%;
+}
+.bannerinnr .bannercntnt {
+    padding-bottom: 18rem;
+}
+.pdequalsec {
+    padding:10rem 0;
+}
+.mgB52 {
+    margin-bottom: 52px;
+}
+h2 {
+    font-size: 3.2rem;
+    color: #000;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -1px;  
+    line-height: 1.2;
+}
+h3 {
+    color: #000;
+    font-size: 6rem;
+    font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: -1.273px;
+    /*text-shadow: 0px 0px 40px rgba(0,0,0,0.25)*/
+}
+.mainbanner 
+ .formcontrol {
+    padding: 4rem 3rem;
+    background: #fff;
+    margin-top: 10rem;
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.25)
+}
+.mainbanner .formcontrol .title h4 {
+    margin-bottom: 1.2rem;
+}
+h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+.mainbanner .formcontrol .inputcontrol input, .mainbanner .formcontrol .inputcontrol select {
+    font-size: 1.4rem;
+    color: #6C8C91;
+    font-family: 'Poppins';
+    border: 1px solid #D9DCD2;
+    width: 100%;
+    border-bottom: 2px solid #A4A6A1;
+    height: 5rem;
+    padding: 1.6rem;
+}
+.mainbanner .formcontrol .inputcontrol {
+    margin-bottom: 2rem;
+}
+.mainbanner .formcontrol .inputcontrol input::placeholder, .mainbanner .formcontrol .inputcontrol select {
+    font-size: 1.4rem;
+    color: #6C8C91;
+}
+.col-10 {
+    width: 10%;
+}
+.col-15 {
+    width: 15%;
+}
+.col-25 {
+    width: 25%;
+}
+.col-65 {
+    width: 65%;
+}
+.col-2 {
+    width: 20%;
+}
+.col-3 {
+    width: 30%;
+}
+.col-4 {
+    width: 40%;
+}
+.col-5 {
+    width: 50%;
+}
+.col-6 {
+    width: 60%;
+}
+.col-7 {
+    width: 70%;
+}
+.mb30 {margin-bottom: 3rem;}
+.whiteText {
+    color: #fff;
+}
+strong {
+    font-weight:700;
+}
+.bgProperty {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mainbanner {
+    position: relative;
+    z-index: 1;
+}
+.mainbanner:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0B262A;
+    height: 100%;
+    opacity: 0.65;
+    width: 100%;
+}
+p {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.38px;
+}
+.footer {
+    padding: 20px 0;
+}
+.footer p {
+    font-size: 1.6rem
+}
+.col-third {
+    width: calc(100% / 3);
+}
+.textCenter {
+    text-align: center;
+}
+.btn {background: #004A6E;color: #fff;text-align: center;font-family: 'Poppins';font-size: 1.8rem;font-weight: 400;padding: 1.4rem 2.5rem;display: inline-block;text-decoration: none;margin-top: 1rem;cursor: pointer;}
+.btn:hover {
+    background: #000;
+}
+.connectBtn {
+    text-align: center;
+}
+.poR {
+    position: relative;
+}
+.pd60 {
+    padding: 60px 0;
+}
+.col-67 {
+    width: 65%;
+}
+.col-35 {
+    width: 35%;
+}
+.col-45 {
+    width: 45%;
+}
+.HeadingBox {
+    max-width: 70rem;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+}
+.HeadingBox p {
+    color: #406065;
+    font-weight: 300;
+    margin: 1rem;
+}
+h4.semiSmall {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #6C8C91;
+    font-weight: 500;
+}
+h6.small {
+    font-size: 1.6rem;
+    color: #6C8C91;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.stickybtn {
+    position: fixed;
+    top: 45%;
+    right: -6.4rem;
+    transform: rotate(-90deg);
+    z-index: 2
+}
+.disable {
+    opacity: 0.3;
+}
+.keydemandPIcntnt ul li, .keybandBrandcntnt ul li {
+    width: calc(100% / 5 ); 
+    padding: 2.5rem 0;
+}
+.keydemandPIcntnt .linnr .iconBox .icon {
+    width: 13.5rem;
+    height: 13.5rem;
+    margin: 0 auto;
+    margin-bottom: 1.6rem;
+}
+.keydemandPIcntnt .linnr .iconBox .icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.keydemandPIcntnt .linnr .iconBox .iconContent p {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    color: #08536B;
+}
+.keybandBrandcntnt .linnr .iconBox .icon {
+    width: 13.5rem;
+    height: 13.5rem;
+    margin: 0 auto;
+    margin-bottom: 1.6rem;
+    border: 1px solid #6C8C91;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.keybandBrandcntnt .linnr .iconBox .iconContent h4 {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    color: #08536B;
+    font-weight: normal;
+}
+.keybandBrandcntnt .linnr .iconBox {
+    padding: 0 1.2rem;
+}
+.bigprop, .smallprop, .mediumprop, .squreprop {  
+    box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.25);
+    margin-bottom: 2rem;
+} 
+.lightgreen {
+    background-color: #D9E5E6;
+}
+.grey {
+    background-color: #F4F6F5;
+}
+.darkgray {
+    background-color: #D9DCD2;
+}
+.propgrp {
+    padding: 0 2rem;
+}
+.propcntnt {
+    padding: 3rem;
+    position: relative;
+}
+.propcntnt img {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    width: 6rem;
+}
+.propcntnt p {
+    /*text-shadow: 0px 0px 4px rgba(0,0,0,0.25);*/
+    font-size: 1.8rem;
+    color: #406065;
+}
+.squreprop {
+    height: 30rem;
+}
+.smallprop {
+    height: 18rem;
+}
+.mediumprop  {
+    height: 30rem;
+}
+.propgrp {
+    height: calc(100% - 2rem)
+}
+.bigprop  {
+    height: 100%;
+}
+.smallprop-wrap img {
+    width: 3.8rem;
+}
+.smallprop-wrap .col-5 {
+    width: 48%;
+}
+.keydemandPI h6.small {
+    margin-bottom: 2rem;
+}
+.mainbanner .formcontrol .inputcontrol input:focus, .mainbanner .formcontrol .inputcontrol select:focus {
+    border-color: #004a6e;
+}
+.smallprop 
+ h3 {
+    font-size: 4rem;
+}
+.bigprop  h3 {
+    font-size: 12rem;
+}
+.keybandBrand h4 {
+    text-transform: uppercase;
+}
+.downarrow.stickyarrow {
+    position: fixed;
+    right: 20px;
+    display: inline-block !important;
+    bottom: 20px;
+    margin-bottom: 20px;
+    transform: rotate(180deg);
+    cursor: pointer;
+    animation: mymove 2s ;
+}
+@keyframes mymove {
+  0%  {bottom: 0px;}
+  100% {bottom: 20px;}
+}
+@media(max-width: 2560px) {
+    html {
+        font-size: 70%;
+    }
+}
+@media(max-width: 1600px) {
+    html {
+        font-size: 60%;
+    }
+}
+@media(max-width: 1440px) {
+    html {
+        font-size: 56%;
+    }
+}
+@media(max-width: 1360px) {
+    html {
+        font-size: 52%;
+    }
+}
+@media(max-width: 1200px) {
+    html {
+        font-size: 40%;
+    }
+}
+@media(max-width: 1023px) {
+    .container {
+        padding: 0 20px;
+    }
+@media(max-width: 769px) {
+    .keydemandPIcntnt ul li, .keybandBrandcntnt ul li {
+        width: calc(100% / 4 );
+        padding: 2.5rem 0;
+    }
+    .keydemandPIcntnt ul, .keybandBrandcntnt ul {
+       justify-content: center;
+    }
+}
+@media(max-width: 479px) {
+    .keybandBrandcntnt ul li {
+        width: calc(100% / 2 );
+        padding: 2.5rem 0;
+    }
+    .keydemandPIcntnt ul li {
+        width: calc(100% / 3 );
+        padding: 2.5rem 0;
+    }
+    .col-2, .col-45, .col-35, .col-6, .col-3 {
+        width: 100%
+    }
+    .propgrp {
+        height: 30rem;
+        margin-bottom: 2rem;
+        padding: 0;
+    }
+    .bannerinnr .bannercntnt {
+        padding-top: 20rem;
+        padding-bottom: 0rem;
+    }
+    .pdequalsec.keydemandestate {
+        margin-top: 350px;
+    }
+    .keydemandestate h2 br {
+        display: none;
+    }
+    .stickybtn {
+        right: -44px;
+    }
+    h1 br {
+        display: none;
+    }
+    .keybandBrandcntnt .linnr .iconBox .icon {
+        width: 80px;
+        height: 80px;
+    }
+    .keybandBrandcntnt .linnr .iconBox .icon img {
+        width: 45px;
+    }
+    .keydemandPIcntnt .linnr .iconBox .icon {
+        width: 80px;
+        height: 80px;
+    }
+}
